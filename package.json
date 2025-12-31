@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A comprehensive task management system with user authentication, priority management, and role-based access control",
   "scripts": {
-    "start": "cd backend && node server.js",
+    "start": "node backend/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
     "client": "cd frontend && npm start",
@@ -11,6 +11,15 @@
     "install-client": "cd frontend && npm install",
     "install-all": "npm run install-server && npm run install-client",
     "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
