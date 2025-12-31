@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database connection
-const sequelize = require('./database');
+const sequelize = require('../database');
 
 // Import models to ensure they are registered
 const User = require('./models/User');
