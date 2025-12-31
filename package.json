@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A comprehensive task management system with user authentication, priority management, and role-based access control",
   "scripts": {
+    "start": "cd backend && node server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
     "client": "cd frontend && npm start",
